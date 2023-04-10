@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(to top right, #f43f5e, #0ea5e9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+#app {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 500px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.todo__item {
+  display: flex;
+  background-color: rgb(220, 227, 227);
+  margin: 5px 0px;
+  height: 40px;
+  position: relative;
+}
+
+.todo__title {
+  margin-top: 10px;
+}
+.todo__delete__button {
+  position: absolute;
+  right: 0px;
+  height: inherit;
+  width: 60px;
+}
+
+.form__field {
+  display: flex;
+  gap: 4px;
+}
+
+.create__form .form__control {
+  flex-grow: 1;
+}
+
+.create__form .form__control,
+.create__form .form__button {
+  height: 50px;
+  
+}
+
+.todo__list li {
+  list-style: none;
+}
+
+
+.create__form .form__button {
+  padding: 0 25px;
+  border-radius: 0;
+  border: 0;
+  background-color: rgb(99 102 241 / 1);
+  color: #ffffff;
+}
+
+.create__form .form__button:hover {
+  background-color: rgb(129 140 248 / 1);
+}
+
+.create__form .form__control {
+  padding: 0 4px;
+  border-radius: 0;
+  border: 2px solid rgb(212, 217, 251);
+}
+
+.create__form .form__control:focus,
+.create__form .form__control:active {
+  outline: 0;
+  border: 2px solid rgb(99 102 241 / 1);
+}
+
+.filter__form {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.todo__summary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.todo__summary .todo__clear__button {
+  padding: 15px 20px;
+  background-color: red;
+  border: none;
+  color: aliceblue;
+}
